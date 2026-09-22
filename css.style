@@ -1,0 +1,738 @@
+/* ===== HOSPITAL COLOUR THEME ===== */
+
+:root {
+    --primary: #0f7ac4;
+    --dark: #123b5d;
+    --light-blue: #eaf6ff;
+    --very-light: #f3f9fd;
+    --white: #ffffff;
+}
+
+/* Navigation */
+nav {
+    background: var(--white);
+}
+
+.nav-links a {
+    color: var(--dark);
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* Home */
+#home {
+    background: linear-gradient(
+        110deg,
+        var(--light-blue),
+        var(--white)
+    );
+}
+
+/* About */
+#about {
+    background: var(--white);
+}
+
+/* Departments */
+#departments {
+    background: var(--very-light);
+}
+
+/* Doctors */
+#doctors {
+    background: var(--white);
+}
+
+/* Services */
+#services {
+    background: var(--very-light);
+}
+
+/* Appointment */
+#appointment {
+    background: var(--white);
+}
+
+/* Contact */
+#contact {
+    background: var(--light-blue);
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: var(--white);
+}
+/* ================================
+   CAREPLUS HOSPITAL
+   PROFESSIONAL DESIGN
+================================ */
+
+
+/* ===== BASIC ===== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7fbff;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+/* ===== NAVIGATION ===== */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 6%;
+    background: white;
+
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0f5fa8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: #334155;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0f7ac4;
+}
+
+
+/* ===== HOME ===== */
+
+#home {
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 6%;
+
+    background:
+        linear-gradient(
+            110deg,
+            #eaf6ff,
+            #ffffff
+        );
+}
+
+.hero-content {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #0f7ac4;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: 54px;
+    line-height: 1.15;
+    color: #123b5d;
+    margin-bottom: 20px;
+}
+
+.hero-text > p:not(.welcome) {
+    font-size: 19px;
+    color: #64748b;
+    max-width: 600px;
+}
+
+
+/* ===== BUTTONS ===== */
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero-buttons a,
+button {
+    display: inline-block;
+
+    padding: 13px 23px;
+    margin-right: 10px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #0f7ac4;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-buttons a:hover,
+button:hover {
+    background: #095f9c;
+    transform: translateY(-2px);
+}
+
+.hero-buttons .secondary-btn {
+    background: white;
+    color: #0f7ac4;
+    border: 1px solid #0f7ac4;
+}
+
+.hero-buttons .secondary-btn:hover {
+    background: #eaf6ff;
+}
+
+
+/* ===== GENERAL SECTIONS ===== */
+
+section {
+    padding: 80px 6%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 34px;
+    color: #123b5d;
+    margin-bottom: 12px;
+}
+
+.section-intro {
+    max-width: 650px;
+    margin: 0 auto 40px;
+
+    color: #64748b;
+    font-size: 17px;
+}
+
+
+/* ===== ABOUT ===== */
+
+#about {
+    background: white;
+}
+
+#about .section-intro {
+    margin-bottom: 0;
+}
+
+
+/* ===== CARDS ===== */
+
+.cards-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.card,
+.doctor-card {
+    width: 250px;
+
+    padding: 30px 22px;
+
+    background: white;
+
+    border: 1px solid #e1edf5;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.card:hover,
+.doctor-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+.card h3,
+.doctor-card h3 {
+    color: #0f5fa8;
+    margin-bottom: 10px;
+}
+
+.card p,
+.doctor-card p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* ===== DEPARTMENTS ===== */
+
+#departments {
+    background: #f3f9fd;
+}
+
+
+/* ===== DOCTORS ===== */
+
+#doctors {
+    background: white;
+}
+
+.doctor-photo {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e5f3fc;
+    color: #0f7ac4;
+
+    font-weight: bold;
+    font-size: 22px;
+
+    border: 4px solid white;
+    outline: 2px solid #8bc9eb;
+}
+
+
+/* ===== SERVICES ===== */
+
+#services {
+    background: #f3f9fd;
+}
+
+.services-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.service {
+    width: 280px;
+
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    border-left: 4px solid #0f7ac4;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+
+    text-align: left;
+}
+
+.service h3 {
+    color: #0f5fa8;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* ===== APPOINTMENT ===== */
+
+#appointment {
+    background: white;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+
+    padding: 35px;
+
+    background: #f7fbff;
+
+    border: 1px solid #dcecf6;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+
+    padding: 13px;
+    margin-bottom: 15px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+
+    background: white;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 2px solid #b9def2;
+    border-color: #0f7ac4;
+}
+
+form button {
+    margin: 5px 0 0;
+    width: 100%;
+}
+
+
+/* ===== CONTACT ===== */
+
+#contact {
+    background: #eaf6ff;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: auto;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.contact-info p {
+    color: #475569;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #123b5d;
+    color: white;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #home {
+        min-height: 550px;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin: auto;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text > p:not(.welcome) {
+        font-size: 17px;
+    }
+
+    .hero-buttons a {
+        margin: 5px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .card,
+    .doctor-card,
+    .service {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    form {
+        padding: 25px 18px;
+    }
+}
+/* ===== SECTION COLOURS ===== */
+
+#home {
+    background: #eaf6ff;
+}
+
+#about {
+    background: #ffffff;
+}
+
+#departments {
+    background: #f0f8ff;
+}
+
+#doctors {
+    background: #e8f5f9;
+}
+
+#services {
+    background: #f5faff;
+}
+
+#appointment {
+    background: #ffffff;
+}
+
+#contact {
+    background: #eaf6ff;
+}
+
+footer {
+    background: #123b5d;
+}
+/* ===== MENU COLOURS ===== */
+
+.nav-links a:nth-child(1) {
+    color: #0f7ac4;
+}
+
+.nav-links a:nth-child(2) {
+    color: #16a085;
+}
+
+.nav-links a:nth-child(3) {
+    color: #8e44ad;
+}
+
+.nav-links a:nth-child(4) {
+    color: #e67e22;
+}
+
+.nav-links a:nth-child(5) {
+    color: #2980b9;
+}
+
+.nav-links a:nth-child(6) {
+    color: #c0392b;
+}
+
+.nav-links a:nth-child(7) {
+    color: #16a085;
+}
+/* ===== PROFESSIONAL HEADER ===== */
+
+nav {
+    padding: 16px 6%;
+    border-bottom: 3px solid #0f7ac4;
+    box-shadow: 0 4px 18px rgba(15, 122, 196, 0.12);
+}
+
+/* Hospital Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #123b5d;
+    font-size: 23px;
+}
+
+.logo::before {
+    content: "+";
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0f7ac4;
+    color: white;
+
+    border-radius: 9px;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Menu */
+
+.nav-links {
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #334155 !important;
+    padding: 8px 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0f7ac4 !important;
+    border-bottom: 2px solid #0f7ac4;
+}
+/* ===== HOME HIGHLIGHTS ===== */
+
+.hospital-highlights {
+    display: flex;
+    gap: 18px;
+    margin-top: 45px;
+    max-width: 650px;
+}
+
+.hospital-highlights div {
+    flex: 1;
+    padding: 18px 12px;
+
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #d7eaf5;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.hospital-highlights strong {
+    display: block;
+    color: #0f7ac4;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.hospital-highlights span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .hospital-highlights {
+        flex-direction: column;
+        max-width: 330px;
+        margin: 35px auto 0;
+    }
+
+}
+/* ===== DEPARTMENT ICONS ===== */
+
+.department-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf6ff;
+    color: #0f7ac4;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    border: 1px solid #cce6f5;
+}
